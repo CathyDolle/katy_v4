@@ -74,6 +74,8 @@ body {
       overflow-y: scroll;
       //   background-color: red;
       & img {
+        animation-name: fadePicture;
+        animation-duration: 1s;
         width: 50%;
       }
       //   TYPO
@@ -120,6 +122,8 @@ body {
       }
       // LEFT TEXT
       & .left {
+        animation-name: fadeLeft;
+        animation-duration: 1s;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -138,6 +142,8 @@ body {
         height: 100%;
         // background: pink;
         & img {
+          animation-name: fadeRight;
+          animation-duration: 1s;
           height: 100%;
           width: auto;
         }
@@ -183,7 +189,22 @@ body {
   height: 100vh;
   z-index: 1;
   & img {
-    height: 70%;
+    animation-name: fadePicture;
+    animation-duration: 0.5s;
+    width: 60%;
+    z-index: 2;
+  }
+  & .close {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    top: 80;
+    width: 60%;
+    height: 20px;
+    cursor: pointer;
+    & img {
+      width: 20px;
+    }
   }
   & .control {
     margin: 30px;
@@ -196,4 +217,33 @@ body {
   display: none;
 }
 
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadePicture {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

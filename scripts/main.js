@@ -3,6 +3,7 @@ let zoomImg = document.querySelector(".zoomImg-js")
 let zoom = document.querySelector(".zoom-js")
 let prev = document.querySelector(".prev-js")
 let next = document.querySelector(".next-js")
+let close = document.querySelector(".close-js")
 var pos = 0
 
 // FULLSCREEN
@@ -18,6 +19,7 @@ for (var i = 0; i < img.length; i++) {
 }
 
 // EVENT ON CLICK
+close.addEventListener("click", minimScreen)
 next.addEventListener("click", nextSlide)
 prev.addEventListener("click", prevSlide)
 window.addEventListener("keyup", event => {

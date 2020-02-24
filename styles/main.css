@@ -53,6 +53,8 @@ body {
       height: 80%;
       overflow-y: scroll; }
       .container .box .main img {
+        animation-name: fadePicture;
+        animation-duration: 1s;
         width: 50%; }
       .container .box .main h1 {
         margin-bottom: 10px;
@@ -89,6 +91,8 @@ body {
         text-transform: uppercase;
         letter-spacing: 4px; }
       .container .box .main .left {
+        animation-name: fadeLeft;
+        animation-duration: 1s;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -104,6 +108,8 @@ body {
         width: 50%;
         height: 100%; }
         .container .box .main .right img {
+          animation-name: fadeRight;
+          animation-duration: 1s;
           height: 100%;
           width: auto; }
     .container .box .footer {
@@ -134,7 +140,20 @@ body {
   height: 100vh;
   z-index: 1; }
   .zoom img {
-    height: 70%; }
+    animation-name: fadePicture;
+    animation-duration: 0.5s;
+    width: 60%;
+    z-index: 2; }
+  .zoom .close {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    top: 80;
+    width: 60%;
+    height: 20px;
+    cursor: pointer; }
+    .zoom .close img {
+      width: 20px; }
   .zoom .control {
     margin: 30px;
     width: 15px;
@@ -142,5 +161,25 @@ body {
 
 .hidden {
   display: none; }
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+@keyframes fadePicture {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
