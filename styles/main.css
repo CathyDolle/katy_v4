@@ -55,7 +55,15 @@ body {
       .container .box .main img {
         animation-name: fadePicture;
         animation-duration: 1s;
+        cursor: pointer;
         width: 50%; }
+      .container .box .main img:empty {
+        width: 50%;
+        background-color: #ececf0;
+        animation: aniVertical 3s ease;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        opacity: 0; }
       .container .box .main h1 {
         margin-bottom: 10px;
         font-family: lato;
@@ -181,5 +189,12 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@keyframes aniVertical {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 /*# sourceMappingURL=main.css.map */
