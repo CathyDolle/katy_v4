@@ -60,7 +60,6 @@ body {
       & a:hover {
         color: $title;
         font-weight: 400;
-
       }
     }
     // MAIN
@@ -171,3 +170,30 @@ body {
   width: 280px;
   border: solid 0.5px rgb(219, 219, 219);
 }
+
+// ZOOM IMG
+
+.zoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  & img {
+    height: 70%;
+  }
+  & .control {
+    margin: 30px;
+    width: 15px;
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+

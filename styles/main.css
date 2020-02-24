@@ -124,4 +124,23 @@ body {
   width: 280px;
   border: solid 0.5px #dbdbdb; }
 
+.zoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; }
+  .zoom img {
+    height: 70%; }
+  .zoom .control {
+    margin: 30px;
+    width: 15px;
+    cursor: pointer; }
+
+.hidden {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
