@@ -57,13 +57,6 @@ body {
         animation-duration: 1s;
         cursor: pointer;
         width: 50%; }
-      .container .box .main img:empty {
-        width: 50%;
-        background-color: #ececf0;
-        animation: aniVertical 3s ease;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-        opacity: 0; }
       .container .box .main h1 {
         margin-bottom: 10px;
         font-family: lato;

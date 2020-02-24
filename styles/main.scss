@@ -79,14 +79,6 @@ body {
         cursor: pointer;
         width: 50%;
       }
-      & img:empty {
-        width: 50%;
-        background-color: rgb(236, 236, 240);
-        animation: aniVertical 3s ease;
-        animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
-        opacity: 0;
-      }
       //   TYPO
       & h1 {
         margin-bottom: 10px;
