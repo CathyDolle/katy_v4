@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-twitch">
+      <rect width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="twitch" clip-path="url(#clip-twitch)">
+    <g id="twitch-2" data-name="twitch" transform="translate(18.572 15.422)">
+      <path id="Tracé_217" data-name="Tracé 217" d="M.975,29.447V147.194H41.524v22.084h22.14l22.1-22.091h33.185l44.252-44.139V0H12.027Zm25.8-14.741H148.458V95.67l-25.815,25.758H82.08l-22.1,22.055V121.428h-33.2Z" transform="translate(-0.975 0)" fill="#dbdbdb"/>
+      <path id="Tracé_218" data-name="Tracé 218" d="M10.385,6.262H25.126V50.415H10.385Z" transform="translate(55.986 37.905)" fill="#dbdbdb"/>
+      <path id="Tracé_219" data-name="Tracé 219" d="M16.133,6.262H30.881V50.415H16.133Z" transform="translate(90.78 37.905)" fill="#dbdbdb"/>
+    </g>
+  </g>
+</svg>
