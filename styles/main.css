@@ -48,7 +48,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    display: none; }
     .container .palette .color {
       margin: 8px 0px 8px 0px;
       width: 35px;
@@ -84,7 +85,7 @@ body {
       .container .box .header a {
         text-decoration: none;
         color: var(--inactive);
-        font-size: 13px;
+        font-size: 12px;
         text-transform: uppercase;
         font-family: lato;
         font-weight: 200; }
