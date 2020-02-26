@@ -11,6 +11,13 @@
   </head>
   <body>
     <section class="container">
+      <!-- PALETTE -->
+      <div class="container palette">
+        <div class="palette color purple purple-js"></div>
+        <div class="palette color blue blue-js"></div>
+        <div class="palette color pink pink-js"></div>
+        <div class="palette color dark dark-js"></div>
+      </div>
       <!-- BOX -->
       <div class="container box">
         <!-- HEADER -->
@@ -23,22 +30,21 @@
         </div>
         <!-- MAIN ARTICLE -->
         <div class="box main">
-            <div class="main left">
-              <h1>INFOS
-              </h1>
-              <h2>commissions <span>■</span> prices</h2>
-              <div class="line"></div>
-              <p>→ Panels : <mark>10$</mark> each / <mark>50$</mark> x6</p>
-              <p>→ Overlays : <mark>60$</mark> each</p>
-              <p><mark>Everything on PNG Files</mark></p>
-              <p>
-                Prices may vary depending on complexity
-              </p>
-            </div>
-            <div class="main right">
-              <img src="../images/home.jpg" alt="infos" />
-            </div>
+          <div class="main left">
+            <h1>INFOS</h1>
+            <h2>commissions <span>■</span> prices</h2>
+            <div class="line"></div>
+            <p>→ Panels : <mark>10$</mark> each / <mark>50$</mark> x6</p>
+            <p>→ Overlays : <mark>60$</mark> each</p>
+            <p><mark>Everything on PNG Files</mark></p>
+            <p>
+              Prices may vary depending on complexity
+            </p>
           </div>
+          <div class="main right">
+            <img src="../images/home.jpg" alt="infos" />
+          </div>
+        </div>
         <!-- FOOTER -->
         <div class="box footer">
           <a href="https://twitter.com/cathydolle" target="_blank">
@@ -55,6 +61,15 @@
           </a>
         </div>
       </div>
+      <!-- ZOOM -->
+      <section class="zoom zoom-js hidden">
+        <div class="zoom close">
+          <img class="close-js" src="../images/close.svg" alt="close" />
+        </div>
+        <img class="control prev-js" src="../images/prev.svg" alt="prev" />
+        <img class="zoomImg-js" src="" alt="zoom" />
+        <img class="control next-js" src="../images/next.svg" alt="next" />
+      </section>
     </section>
     <script src="../scripts/main.js"></script>
   </body>
